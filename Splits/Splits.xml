@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Splits>
+  <Split name="End" text="End"/>
+  <Split name="Puzzles" text="Puzzles">
+    <Split name="Event_WAKEUP_PUZZLE" text="The Forest - The Guiding Light"/>
+    <Split name="Event_SECRETCAVE_A" text="The Forest - Forsaken"/>
+    <Split name="Event_SECRETCAVE_A3" text="The Forest - Unhindered"/>
+    <Split name="Event_MINILINK" text="The Forest - Congested"/>
+    <Split name="Event_SECRETCAVE_B" text="The Forest - A Solitary Way"/>
+    <Split name="Event_NEWPUZZLE_3" text="The Forest - Submerged"/>
+    <Split name="Event_TEMPLE_ROOM96" text="The Forest - A Fragile Flame"/>
+    <Split name="Event_FROG_FORLORNPUZZLE" text="The Forest - A Sorrowful Soul"/>
+    <Split name="Event_MARSHLANDS_INTRO2" text="The Marsh - High Expectations"/>
+    <Split name="Event_FIREBLOCKS_A" text="The Marsh - Kindling"/>
+    <Split name="Event_INTRO_PUZZLEA" text="The Marsh - Path Of Ruin"/>
+    <Split name="Event_NEWPUZZLE_1" text="The Marsh - A Linear Road"/>
+    <Split name="Event_SNAKE_BEAMPUZZLE" text="The Marsh - Obscurity"/>
+    <Split name="Event_GRASSBATCH2" text="The Marsh - Compound Choices"/>
+    <Split name="Event_CHRISPLAYGROUND_ROOM2" text="The Marsh - Avoidance"/>
+    <Split name="Event_MARSH_FORLORN" text="The Marsh - Lost In Thought"/>
+    <Split name="Event_TEMPLE_ROOM26" text="The Caves - Carried Away"/>
+    <Split name="Event_FIRSTMAZE_RIGHT" text="The Caves - Fractured Mind"/>
+    <Split name="Event_BEAMPUZZLETEST02" text="The Caves - Turned Around"/>
+    <Split name="Event_SNAKE_EAST_01" text="The Caves - Abundance"/>
+    <Split name="Event_SNAKE_ANTEROOM04" text="The Caves - Into The Dark"/>
+    <Split name="Event_MARSH_DAM_HEART_OLD" text="The Caves - A Complex Machine"/>
+    <Split name="Event_SNAKEPUZZLE_SLIDE" text="The Caves - A Brief Journey"/>
+    <Split name="Event_SNAKE_FORLORN" text="The Caves - Broken Down"/>
+  </Split>
+  <Split name="Events" text="Events">
+    <Split name="Event_TALKEDTO_FORESTKING" text="Talk to the Forest King for the first time"/>
+    <Split name="Event_LOSTMARSH_FOUNDFLUTE" text="Find the flute"/>
+    <Split name="Event_SEENPIG" text="Find the King of Pigs"/>
+    <Split name="Event_PIG_APPEAR_FROM_WATER" text="The King of Pigs appears from the water"/>
+    <Split name="Event_HUB_ARRESTED" text="Get caught by the bird guards"/>
+    <Split name="Event_IRONCLAW" text="Trap Ironclaw"/>
+    <Split name="Event_OPENED_DAM" text="Open the dam"/>
+    <Split name="Event_SNAKE_RIGHTTOLEFT" text="Transfer the light to the left side of the caves hub"/>
+    <Split name="Event_BUILTBOAT" text="Build the custom boat"/>
+    <Split name="Event_FORESTKING_SECRET_ENTRANCE" text="Open the forest king's throne entrance"/>
+    <Split name="Event_REDEMBER_SECRETDOOR" text="Open the secret door inside the forest king's throne"/>
+  </Split>
+  <Split name="Chests" text="Chests">
+    <Split name="Chest_FROG_PRELAKE_417" text="Left Forest (Left)"/>
+    <Split name="Chest_FROG_PRELAKE_413" text="Left Forest (Right)"/>
+    <Split name="Chest_FROG_CAVE_106" text="Right Forest Cave"/>
+    <Split name="Chest_FROG_EXIT_141" text="Forest To Crossroad"/>
+    <Split name="Chest_LOSTTEST_KEYROOM1_167" text="East Marsh (Left)"/>
+    <Split name="Chest_LOSTTEST_KEYROOM1_176" text="East Marsh (Right)"/>
+    <Split name="Chest_LOSTMARSH_MAPROOM_107" text="Maze Map Room"/>
+    <Split name="Chest_LOSTMARSH_ENDR_110" text="Maze First Tile"/>
+    <Split name="Chest_LOSTMARSH_LR_123" text="Maze Left-Up-Right Tile"/>
+    <Split name="Chest_LOSTMARSH_UD_109" text="Maze Up-Down Tile (Top)"/>
+    <Split name="Chest_LOSTMARSH_UD_134" text="Maze Up-Down Tile (Down)"/>
+    <Split name="Chest_GAMEHUB_9_113" text="Maze Flute Inside"/>
+    <Split name="Chest_LOSTMARSH_FIRSTDOOR_120" text="Maze Flute Outside"/>
+    <Split name="Chest_PIG_THRONE_295" text="The Wallow Lilypad"/>
+    <Split name="Chest_PIG_THRONE_290" text="The Wallow Floating"/>
+    <Split name="Chest_PIG_THRONE_391" text="The Wallow Slab"/>
+    <Split name="Chest_PIG_THRONE_265" text="The Wallow Right Pig"/>
+    <Split name="Chest_PIG_ORCHARD_2_203" text="The Nook"/>
+    <Split name="Chest_MARSH_ROOM43_205" text="The Wallow Edge (Left)"/>
+    <Split name="Chest_MARSH_ROOM43_158" text="The Wallow Edge (Right)"/>
+    <Split name="Chest_PIG_CAMPFIRE_183" text="The Hollow Marsh (Right Entrance)"/>
+    <Split name="Chest_PIG_CAMPFIRE_384" text="The Hollow Marsh (Metal Cubes)"/>
+    <Split name="Chest_HIDDENFLUTEBIT_186" text="Orchard Gate (Right)"/>
+    <Split name="Chest_HIDDENFLUTEBIT_192" text="Orchard Gate (Left)"/>
+    <Split name="Chest_PIG_ORCHARD_270" text="The Dying Orchard (Frog)"/>
+    <Split name="Chest_PIG_ORCHARD_263" text="The Dying Orchard (Totem)"/>
+    <Split name="Chest_MARSH_LIFT_124" text="Marsh To Crossroad"/>
+    <Split name="Chest_MARSH_CRABPUZZLE_117" text="Ironclaw Puzzle"/>
+    <Split name="Chest_MARSH_DAM_197" text="Dam (Right)"/>
+    <Split name="Chest_MARSH_DAM_145" text="Dam (Left)"/>
+    <Split name="Chest_MARSH_DAM_HEART_270" text="Dam Heart"/>
+    <Split name="Chest_TEMPLE_ROOM13_181" text="Cave Entrance Outside"/>
+    <Split name="Chest_NEW_SNAKECAVE_ENTRANCE_104" text="Cave Entrance Inside"/>
+    <Split name="Chest_NEW_SNAKECAVE_PEAK2_184" text="Outside Cave (Front)"/>
+    <Split name="Chest_NEW_SNAKECAVE_PEAK2_207" text="Outside Cave (Back)"/>
+    <Split name="Chest_INTRO_CAVE_B_141" text="Skeleton White Lily"/>
+    <Split name="Chest_NEW_SNAKECAVE_CAMPFIRE_240" text="Cave Campfire"/>
+    <Split name="Chest_NEW_SNAKECAVE_BL_189" text="Snake Cave Left"/>
+    <Split name="Chest_NEW_SNAKECAVE_PEAK_119" text="Snake Cave Left Back"/>
+    <Split name="Chest_NEW_SNAKECAVE_RIGHT_209" text="Snake Cave Right"/>
+    <Split name="Chest_TEMPLE_ROOM23_166" text="Snake Cave Right Back"/>
+    <Split name="Chest_NEWHUB_2_122" text="Forest King's Throne"/>
+  </Split>
+</Splits>

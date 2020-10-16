@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Presets>
+  <Preset name="Any%">
+    <Split name="Event_WAKEUP_PUZZLE"/>
+    <Split name="Event_SECRETCAVE_A"/>
+    <Split name="Event_SECRETCAVE_B"/>
+    <Split name="Event_TEMPLE_ROOM96"/>
+    <Split name="Event_TALKEDTO_FORESTKING"/>
+    <Split name="Event_LOSTMARSH_FOUNDFLUTE"/>
+    <Split name="Event_SEENPIG"/>
+    <Split name="Event_FIREBLOCKS_A"/>
+    <Split name="Event_MARSHLANDS_INTRO2"/>
+    <Split name="Event_SNAKE_BEAMPUZZLE"/>
+    <Split name="Event_INTRO_PUZZLEA"/>
+    <Split name="Event_HUB_ARRESTED"/>
+    <Split name="Event_IRONCLAW"/>
+    <Split name="Event_OPENED_DAM"/>
+    <Split name="Event_SNAKE_RIGHTTOLEFT"/>
+    <Split name="Event_FIRSTMAZE_RIGHT"/>
+    <Split name="Event_TEMPLE_ROOM26"/>
+    <Split name="Event_SNAKE_EAST_01"/>
+    <Split name="Event_SNAKE_FORLORN"/>
+    <Split name="Event_BUILTBOAT"/>
+    <Split name="Event_BEAMPUZZLETEST02"/>
+    <Split name="Event_FORESTKING_SECRET_ENTRANCE"/>
+    <Split name="End"/>
+  </Preset>
+  <Preset name="All Puzzles">
+    <Split name="Event_WAKEUP_PUZZLE"/>
+    <Split name="Event_SECRETCAVE_A"/>
+    <Split name="Event_SECRETCAVE_A3"/>
+    <Split name="Event_MINILINK"/>
+    <Split name="Event_SECRETCAVE_B"/>
+    <Split name="Event_NEWPUZZLE_3"/>
+    <Split name="Event_TEMPLE_ROOM96"/>
+    <Split name="Event_FROG_FORLORNPUZZLE"/>
+    <Split name="Event_TALKEDTO_FORESTKING"/>
+    <Split name="Event_LOSTMARSH_FOUNDFLUTE"/>
+    <Split name="Event_SEENPIG"/>
+    <Split name="Event_MARSHLANDS_INTRO2"/>
+    <Split name="Event_FIREBLOCKS_A"/>
+    <Split name="Event_INTRO_PUZZLEA"/>
+    <Split name="Event_NEWPUZZLE_1"/>
+    <Split name="Event_SNAKE_BEAMPUZZLE"/>
+    <Split name="Event_GRASSBATCH2"/>
+    <Split name="Event_CHRISPLAYGROUND_ROOM2"/>
+    <Split name="Event_MARSH_FORLORN"/>
+    <Split name="Event_HUB_ARRESTED"/>
+    <Split name="Event_IRONCLAW"/>
+    <Split name="Event_OPENED_DAM"/>
+    <Split name="Event_SNAKE_RIGHTTOLEFT"/>
+    <Split name="Event_TEMPLE_ROOM26"/>
+    <Split name="Event_FIRSTMAZE_RIGHT"/>
+    <Split name="Event_BEAMPUZZLETEST02"/>
+    <Split name="Event_SNAKE_EAST_01"/>
+    <Split name="Event_SNAKE_ANTEROOM04"/>
+    <Split name="Event_MARSH_DAM_HEART_OLD"/>
+    <Split name="Event_SNAKEPUZZLE_SLIDE"/>
+    <Split name="Event_SNAKE_FORLORN"/>
+    <Split name="Event_FORESTKING_SECRET_ENTRANCE"/>
+    <Split name="End"/>
+  </Preset>
+</Presets>
