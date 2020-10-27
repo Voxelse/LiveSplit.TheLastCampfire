@@ -18,8 +18,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>
-    </DefineConstants>
+    <DefineConstants>DEBUG;LOG;MONO</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -28,16 +27,12 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>
-    </DefineConstants>
+    <DefineConstants>MONO</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LiveSplit.VoxSplitter">
-      <HintPath>..\LiveSplit.VoxSplitter\bin\Debug\LiveSplit.VoxSplitter.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -55,8 +50,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LiveSplit.VoxSplitter\Factory.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\Component.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\Memory\Memory.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\Memory\SignatureMemory.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\Memory\NestedPointerFactory.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\Logger.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\NativeMethods.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\ExtensionMethods.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\Settings\Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LiveSplit.VoxSplitter\Settings\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LiveSplit.VoxSplitter\Settings\TreeSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LiveSplit.VoxSplitter\Settings\TreeSettings.Designer.cs">
+      <DependentUpon>TreeSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LiveSplit.VoxSplitter\Settings\SplitGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LiveSplit.VoxSplitter\Settings\SplitGenerator.Designer.cs">
+      <DependentUpon>SplitGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LiveSplit.VoxSplitter\Settings\TooltipSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LiveSplit.VoxSplitter\Settings\TooltipSettings.Designer.cs">
+      <DependentUpon>TooltipSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="TheLastCampfireComponent.cs" />
-    <Compile Include="TheLastCampfireFactory.cs" />
     <Compile Include="TheLastCampfireMemory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -67,6 +93,27 @@
   <ItemGroup>
     <None Include="Components\ComponentsUpdate.xml" />
     <None Include="Components\LiveSplit.TheLastCampfire.dll" />
+  </ItemGroup>
+  <ItemGroup Condition="$([System.Text.RegularExpressions.Regex]::IsMatch($(DefineConstants), '^(.*;)*MANUALCOMPONENTS(;.*)*$'))">
+    <Compile Include="LiveSplit.VoxSplitter\ManualComponents\FontTextComponent.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\ManualComponents\ManualTextComponent.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\ManualComponents\ManualTextSettings.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\ManualComponents\ManualTextSettings.Designer.cs">
+      <DependentUpon>ManualTextSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LiveSplit.VoxSplitter\ManualComponents\ManualTimer.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\ManualComponents\ManualTimerSettings.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\ManualComponents\ManualTimerSettings.Designer.cs">
+      <DependentUpon>ManualTimerSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LiveSplit.VoxSplitter\ManualComponents\ManualDoubleTimer.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\ManualComponents\ManualDoubleTimerSettings.cs" />
+    <Compile Include="LiveSplit.VoxSplitter\ManualComponents\ManualDoubleTimerSettings.Designer.cs">
+      <DependentUpon>ManualDoubleTimerSettings.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup Condition="$([System.Text.RegularExpressions.Regex]::IsMatch($(DefineConstants), '^(.*;)*MONO(;.*)*$'))">
+    <Compile Include="LiveSplit.VoxSplitter\MonoHelper\MonoHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
