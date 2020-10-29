@@ -51,7 +51,7 @@ namespace LiveSplit.TheLastCampfire {
                 puzzle = ptrFactory.MakeString("PuzzleManager", "s_instance", "m_lastCompletedPuzzleName", 0x14);
                 puzzle.StringType = EStringType.UTF16Sized;
 
-                logger.Log(ptrFactory.ToString());
+                Logger.Log(ptrFactory.ToString());
             });
         }
 
@@ -60,7 +60,7 @@ namespace LiveSplit.TheLastCampfire {
         public override void OnStart(TimerModel timer, HashSet<string> splits) {
             remainingSplits.Setup(splits);
 
-            isExploration = constants != null && game.Read<bool>(constants.New + 0x68);
+            isExploration = constants != null && Game.Read<bool>(constants.New + 0x68);
             canEnd = false;
         }
 
@@ -71,12 +71,12 @@ namespace LiveSplit.TheLastCampfire {
                 if(!remainingSplits.ContainsKey("Event")) { return false; }
 
                 int count = eventsCount;
-                eventsCount = game.Read<int>(events.New + 0x40);
+                eventsCount = Game.Read<int>(events.New + 0x40);
                 if(count < eventsCount) {
-                    IntPtr eventArr = game.Read<IntPtr>(events.New + 0x18);
+                    IntPtr eventArr = Game.Read<IntPtr>(events.New + 0x18);
                     for(; count < eventsCount; count++) {
-                        IntPtr eventPtr = game.Read<IntPtr>(eventArr + 0x28 + 0x18 * count);
-                        string eventName = game.ReadString(eventPtr + 0x14, EStringType.UTF16Sized);
+                        IntPtr eventPtr = Game.Read<IntPtr>(eventArr + 0x28 + 0x18 * count);
+                        string eventName = Game.ReadString(eventPtr + 0x14, EStringType.UTF16Sized);
                         Console.WriteLine(eventName);
                         if(eventName.StartsWith("PUZZLE_")) {
                             if(isExploration) {
@@ -102,12 +102,12 @@ namespace LiveSplit.TheLastCampfire {
                 if(!remainingSplits.ContainsKey("Chest")) { return false; }
 
                 int count = chestsCount;
-                chestsCount = game.Read<int>(chests.New + 0x18);
+                chestsCount = Game.Read<int>(chests.New + 0x18);
                 if(count < chestsCount) {
-                    IntPtr chestArr = game.Read<IntPtr>(chests.New + 0x10);
+                    IntPtr chestArr = Game.Read<IntPtr>(chests.New + 0x10);
                     for(; count < chestsCount; count++) {
-                        IntPtr chestPtr = game.Read<IntPtr>(chestArr + 0x20 + 0x8 * count);
-                        string chestName = game.ReadString(chestPtr + 0x14, EStringType.UTF16Sized);
+                        IntPtr chestPtr = Game.Read<IntPtr>(chestArr + 0x20 + 0x8 * count);
+                        string chestName = Game.ReadString(chestPtr + 0x14, EStringType.UTF16Sized);
                         if(remainingSplits.Split("Chest", chestName)) {
                             return true;
                         }
