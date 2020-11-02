@@ -9,7 +9,6 @@ namespace LiveSplit.TheLastCampfire {
         public TheLastCampfireComponent(LiveSplitState state) : base(state) {
             memory = new TheLastCampfireMemory(logger);
             settings = new TreeSettings(state, Start, Reset, Options);
-            settings.SetSettings(state.Run.AutoSplitterSettings);
         }
     }
 }
